@@ -1,0 +1,116 @@
+/* ===== Shwehdi Soft Dashboard Theme ===== */
+
+:root,
+.fi-root,
+html {
+    --fi-primary-50: 255 247 237;
+    --fi-primary-100: 255 237 213;
+    --fi-primary-200: 254 215 170;
+    --fi-primary-300: 253 186 116;
+    --fi-primary-400: 251 146 60;
+    --fi-primary-500: 249 115 22;
+    --fi-primary-600: 234 88 12;
+    --fi-primary-700: 194 65 12;
+    --fi-primary-800: 154 52 18;
+    --fi-primary-900: 124 45 18;
+    --fi-primary-950: 67 20 7;
+}
+
+/* Force dark background to match site */
+.dark .fi-body,
+.dark body,
+.dark .fi-sidebar,
+.dark .fi-topbar {
+    background-color: #03050b !important;
+}
+
+.dark .fi-sidebar {
+    background: linear-gradient(180deg, #03050b 0%, #0a0f1e 100%) !important;
+    border-color: #2a3449 !important;
+}
+
+.dark .fi-sidebar-nav-group-label {
+    color: #ff7a1a !important;
+    font-weight: 700 !important;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+}
+
+.dark .fi-topbar {
+    background: #03050b !important;
+    border-color: #2a3449 !important;
+}
+
+/* Brand styling */
+.dark .fi-brand-name {
+    color: #ff7a1a !important;
+    font-weight: 800 !important;
+}
+
+/* Widgets stats */
+.dark .fi-wi-stats-overview-stat {
+    background: linear-gradient(155deg, #0f1522, #111a29) !important;
+    border-color: #2a3449 !important;
+}
+
+/* Tables */
+.dark .fi-ta-table {
+    background: transparent !important;
+}
+
+.dark .fi-ta-header-cell {
+    background: #0f1522 !important;
+    color: #a8b3c6 !important;
+}
+
+/* Form sections */
+.dark .fi-section {
+    background: linear-gradient(155deg, #0f1522, #111a29) !important;
+    border-color: #2a3449 !important;
+}
+
+/* Active nav item orange */
+.dark .fi-sidebar-item-active .fi-sidebar-item-label {
+    color: #ff7a1a !important;
+}
+
+.dark .fi-sidebar-item-active {
+    background: rgba(255, 122, 26, 0.1) !important;
+}
+
+/* Login page */
+.dark .fi-header {
+    background: #03050b !important;
+}
+
+/* Stats chart color */
+.dark .fi-wi-stats-overview-stat-description-icon {
+    color: #ff7a1a !important;
+}
+
+/* Badge primary colors */
+.dark .fi-badge-color-primary {
+    background: rgba(255, 122, 26, 0.15) !important;
+    color: #ff7a1a !important;
+}
+
+/* Buttons */
+.dark .fi-btn-color-primary {
+    background: #ff7a1a !important;
+    border-color: #ff7a1a !important;
+}
+
+.dark .fi-btn-color-primary:hover {
+    background: #cc4f00 !important;
+}
+
+/* Page header */
+.dark .fi-page-header {
+    background: transparent !important;
+}
+
+/* Cairo font everywhere */
+.fi-root,
+.fi-root * {
+    font-family: 'Cairo', sans-serif !important;
+}
