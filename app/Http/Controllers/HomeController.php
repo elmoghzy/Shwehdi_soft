@@ -23,7 +23,10 @@ class HomeController extends Controller
                 ->get(),
             'featuredProducts' => Product::query()
                 ->with('category:id,name,slug')
-                ->latest('id')
+                ->join('categories', 'categories.id', '=', 'products.category_id')
+                ->orderByRaw("CASE WHEN categories.slug = 'printers' THEN 1 ELSE 0 END")
+                ->orderByDesc('products.id')
+                ->select('products.*')
                 ->take(6)
                 ->get(),
             'totalProducts' => $totalProducts,

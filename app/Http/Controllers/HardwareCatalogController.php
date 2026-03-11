@@ -12,6 +12,7 @@ class HardwareCatalogController extends Controller
     {
         $categories = Category::query()
             ->withCount('products')
+            ->orderByRaw("CASE WHEN slug = 'printers' THEN 1 ELSE 0 END")
             ->orderBy('name')
             ->get();
 
