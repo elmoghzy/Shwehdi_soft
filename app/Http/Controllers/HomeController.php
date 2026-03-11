@@ -24,7 +24,7 @@ class HomeController extends Controller
             'featuredProducts' => Product::query()
                 ->with('category:id,name,slug')
                 ->join('categories', 'categories.id', '=', 'products.category_id')
-                ->orderByRaw("CASE WHEN categories.slug = 'printers' THEN 1 ELSE 0 END")
+                ->orderByRaw("CASE WHEN categories.slug = 'pos-devices' THEN 0 WHEN categories.slug = 'printers' THEN 2 ELSE 1 END")
                 ->orderByDesc('products.id')
                 ->select('products.*')
                 ->take(6)
