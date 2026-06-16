@@ -23,7 +23,9 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>@yield('title', 'أنظمة المبيعات وأجهزة الكاشير')</title>
+        <title>@yield('title', 'الشويهدي سوفت | منظومة الشويهدي لإدارة المبيعات والمخازن')</title>
+        <meta name="description" content="@yield('meta_description', 'شركة الشويهدي للبرمجيات تقدم أفضل أنظمة كاشير ومنظومات ERP متكاملة، أجهزة باركود، وشاشات لمس تناسب كافة الأنشطة التجارية.')">
+        <meta name="keywords" content="@yield('meta_keywords', 'الشويهدي سوفت, منظومة الشويهدي, أنظمة كاشير, برمجيات, أجهزة باركود, منظومة مقاهي ومطاعم, إدارة مخازن')">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

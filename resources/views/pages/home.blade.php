@@ -1,6 +1,6 @@
 @extends('layouts.marketing')
 
-@section('title', 'الرئيسية | أنظمة المبيعات')
+@section('title', 'الشويهدي سوفت | منظومة الشويهدي لإدارة المبيعات والمخازن')
 
 @section('content')
     @php

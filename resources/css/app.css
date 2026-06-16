@@ -33,19 +33,19 @@
 
 /* ===== Light Mode ===== */
 [data-theme="light"] {
-    --bg: #f0f4f9;
+    --bg: #f8fafc;
     --ink: #0d1424;
     --muted: #4a5a72;
     --primary: #e86600;
     --primary-dark: #b84f00;
     --secondary: #c44f00;
-    --line: #c5d0e0;
-    --panel: #e2e8f2;
-    --panel-elev: #d4dce8;
-    --shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
-    --faq-bg: #e2e8f2;
-    --faq-open-bg: #d4dce8;
-    --faq-border: #c5d0e0;
+    --line: #e2e8f0;
+    --panel: #ffffff;
+    --panel-elev: #ffffff;
+    --shadow: 0 4px 16px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+    --faq-bg: #ffffff;
+    --faq-open-bg: #fff8f3;
+    --faq-border: #e2e8f0;
     --faq-text: #0d1424;
     --faq-answer: #4a5a72;
     --cta-bg: linear-gradient(135deg, #1a2a45, #0f1e36);
@@ -53,8 +53,8 @@
 
 /* Light mode: solid white nav drawer */
 [data-theme="light"] .main-nav {
-    background: #f0f4f9 !important;
-    border-left-color: #c5d0e0 !important;
+    background: #f8fafc !important;
+    border-left-color: #e2e8f0 !important;
 }
 
 [data-theme="light"] .main-nav a {
@@ -71,7 +71,7 @@
 }
 
 [data-theme="light"] body {
-    background: #f97316;
+    background: #f8fafc;
 }
 
 [data-theme="light"] .site-bg {
@@ -79,14 +79,15 @@
 }
 
 [data-theme="light"] .site-header {
-    background: rgba(255, 255, 255, 0.95) !important;
-    border-bottom-color: rgba(0,0,0,0.08) !important;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    background: rgba(248, 250, 252, 0.92) !important;
+    backdrop-filter: blur(16px) saturate(1.2);
+    border-bottom-color: rgba(0,0,0,0.06) !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
 }
 
 /* Light mode: page-shell needs spacing so orange shows between sections */
 [data-theme="light"] .page-shell {
-    gap: 20px;
+    gap: 28px;
 }
 
 /* Light mode: split layout (contact page) — both columns white */
@@ -262,9 +263,9 @@
 /* Hero section */
 [data-theme="light"] .home-hero {
     background:
-        radial-gradient(circle at 80% 10%, rgba(232, 102, 0, 0.45), transparent 50%),
-        radial-gradient(circle at 20% 90%, rgba(232, 102, 0, 0.25), transparent 45%),
-        linear-gradient(145deg, #fde8d3, #f8d4b0) !important;
+        radial-gradient(circle at 80% 10%, rgba(232, 102, 0, 0.10), transparent 50%),
+        radial-gradient(circle at 20% 90%, rgba(232, 102, 0, 0.06), transparent 45%),
+        linear-gradient(145deg, #ffffff, #fefcfa) !important;
 }
 
 [data-theme="light"] .home-hero h1 {
@@ -333,7 +334,13 @@
 [data-theme="light"] .feature-card {
     background: #ffffff !important;
     border-color: rgba(0,0,0,0.08) !important;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+[data-theme="light"] .feature-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.10), 0 2px 6px rgba(0,0,0,0.06);
 }
 
 [data-theme="light"] .feature-card::before {
@@ -352,7 +359,8 @@
 [data-theme="light"] .home-products-grid .product-showcase {
     background: #ffffff !important;
     border-color: rgba(0,0,0,0.08) !important;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04);
+    border-radius: 16px;
 }
 
 [data-theme="light"] .product-showcase-media {
@@ -431,7 +439,8 @@
 [data-theme="light"] .card {
     background: #ffffff !important;
     border-color: rgba(0,0,0,0.08) !important;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04);
+    border-radius: 16px;
 }
 
 /* Stats grid text */
